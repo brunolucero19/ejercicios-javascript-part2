@@ -1,0 +1,17 @@
+/*Clases y Métodos: Define una clase Rectangle que tenga dos propiedades width y height. Incluye métodos para calcular el área y el perímetro del rectángulo.*/
+
+class Rectangle{
+    
+    constructor(width,height){
+        this.width = width
+        this.height = height
+    }
+
+    perimetro(){
+        let resultado = (this.width*2) + (this.height*2)
+        console.log(`El ancho del rectángulo es: ${this.width} y el largo es: ${this.height} , por lo que el perímetro del rectángulo es: ${resultado}`)
+    }
+}
+
+let rectangulo1 = new Rectangle(10,20)
+rectangulo1.perimetro()
